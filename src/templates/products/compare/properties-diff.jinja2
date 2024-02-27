@@ -1,0 +1,14 @@
+<table>
+<tbody>
+<tr>
+    <th class="hed">{% trans %}Характеристика{% endtrans %}</th>
+    <th class="hed">{% trans %}Значение{% endtrans %}</th>
+</tr>
+{% for property in elem.dif_properties %}
+<tr>
+    <td>{{ property.property_name }}</td>
+    <td>{{ property.property_value }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
